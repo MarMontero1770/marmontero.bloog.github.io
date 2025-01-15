@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo básico para el body */
+body {
+    background-color: #d4aaff; 
+    line-height: 1.6;
+    position: relative;
+    display: flex;               /* Usamos Flexbox en el body */
+    flex-direction: column;      /* Organiza los elementos de arriba hacia abajo */
+}
+
+/* Estilo de la barra de navegación */
+header {
+    background-color: #5300a5;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombra sutil al header */
+}
+
+nav ul {
+    list-style-type: disc; /* Agrega viñetas (puntos) a los elementos */
+    padding-left: 20px;
+    display: inline-block; /* Muestra las listas en línea */
+    margin: 0 10px;
+}
+
+nav ul li {
+    display: inline-block; /* Muestra los elementos <li> en línea */
+    margin-right: 15px; /* Espacio entre los elementos de la barra de navegación */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px; /* Añade espacio alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados para el enlace */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave para el hover */
+}
+
+nav ul li a:hover {
+    background-color: #7a00d7; /* Color de fondo al pasar el mouse */
+    color: #333; /* Cambia el color del texto */
+}
+
+/* Estilo del contenedor principal */
+.contenedor {
+    display: flex;
+    margin: 20px;
+    justify-content: space-between; /* Añade espacio entre la barra lateral y el contenido principal */
+}
+
+/* Estilo de la barra lateral */
+.barra-lateral {
+    width: 25%;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.barra-lateral h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.barra-lateral p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Centrado y estilo de la imagen en la barra lateral */
+.Imagen {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Imagen img {
+    width: 80%; /* Limita el tamaño de la imagen */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de las imágenes */
+    transition: transform 0.3s ease; /* Añade animación al pasar el mouse */
+}
+
+.Imagen img:hover {
+    transform: scale(1.05); /* Efecto de agrandar la imagen al pasar el mouse */
+}
+
+/* Estilo del contenido principal */
+.contenido-principal {
+    width: 70%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra alrededor del contenedor */
+    text-align: justify;
+}
+
+.contenido-principal article {
+    margin-bottom: 30px;
+}
+
+.contenido-principal h1 {
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.contenido-principal p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Modificación de las imágenes dentro del contenido principal */
+.Imagen1, .Imagen2 {
+    text-align: center;
+    display: inline-block; /* Alineación horizontal */
+    margin: 10px; /* Espacio entre las imágenes */
+}
+
+.Imagen1 img, .Imagen2 img {
+    width: 45%; /* Reduce el tamaño de las imágenes y las hace más pequeñas */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: inline-block; /* Alinea las imágenes en línea */
+    margin-right: 10px; /* Espacio entre las imágenes */
+}
+
+.Imagen1 img:hover, .Imagen2 img:hover {
+    transform: scale(1.05); /* Efecto hover en las imágenes */
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #5300a5;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: auto;
+}
+
